@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #B0D122;
+    color: #000000;
+}
+
+html {
+    font-family: Nunito Sans, sans-serif;
+    font-weight: 500;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+}
+
+ul {
+    list-style: none;
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    cursor: pointer;
+    position: relative;
+    padding: 12px 8px 12px 10px;
+    font-size: 18px;
+    transition: 0.2s;
+    text-align: start;
+}   
+
+table{
+    background-color: white;
+    width: 50%;
+}
+
+tr:nth-child(odd){
+    background-color: #eee;
+}
+
+th:nth-child(1){
+    width: 80%;
+}
+
+tr:hover {
+    background: rgb(200, 199, 199);
+}
+
+.nav-logo {
+    max-width: 100%;
+    margin: auto;
+    padding: 1rem 4rem;
+    background: #363636;
+    display: flex;
+    flex-direction: row;
+}
+
+.nav-logo > img {
+    width: 15rem;
+}
+
+.nav-welcome {
+    max-width: 100%;
+    margin: auto;
+    padding: 0.2rem 1rem;
+    background: #B0D122;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+}
+
+.nav-welcome > ul {
+    padding-right: 10rem;
+    font-weight: bold;
+}
+
+.newItem {
+    padding: 40px 10px;
+    background: #FFFFFF;
+    display: flex;
+    justify-content: center;
+}
+
+.caixas {
+    height: 50px;
+    margin-left: 8px;
+}
+
+.addBtn {
+    background-color: #B0D122;
+    color: #fefefd;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 5px;
+    width: 110px;
+    height: 50px;
+    padding: 5px;
+    display: block;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.addBtn:hover {
+    background-color: white;
+    color: #B0D122;
+}
+
+.resetBtn {
+    background-color: #000000;
+    color: #fefefd;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 5px;
+    width: 110px;
+    height: 50px;
+    padding: 5px;
+    display: block;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.resetBtn:hover {
+    background: white;
+    color: #000000;
+}
+
+.itens-tabela {
+    margin: 0;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    background: #FFFFFF;
+}
+
+footer {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    background: #B0D122;
+    margin: 1rem auto;
+}
+

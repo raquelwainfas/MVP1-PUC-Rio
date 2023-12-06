@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <title>Geld - Organize seu dinheiro</title>
+</head>
+<body>
+    <header>
+        <nav class="nav-logo">
+            <img src="img/geld_logo.png">
+        </nav>
+        <nav class="nav-welcome">
+            <ul>Bem vindo(a)</ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="newItem">
+            <select id="inputReferencia" name="inputReferencia" class="caixas">
+                <option value="Capital_giro">Capital de giro</option>
+                <option value="Despesas_extras">Despesas extras</option>
+                <option value="Despesas_fixas">Despesas fixas</option>
+                <option value="Cartao_credito">Cartão de crédito</option>
+             </select>
+            <input type="text" class="caixas" id="inputNome" placeholder="Item">
+            <input type="number" class="caixas" id="inputValor" placeholder="Valor">
+            <input type="date" class="caixas" id="inputData" placeholder="Data">
+            <span onclick="newItem()" class="addBtn">Adicionar item</span>
+        </section>
+
+        <section class="newItem">
+            <input type="number" class="caixas" id="inputAno" placeholder="Ano">
+            <input type="number" class="caixas" id="inputMes" placeholder="Mês">
+            <span onclick="validaEntrada()" class="addBtn">Mostrar itens</span>
+            <span onclick="resetarList()" class="resetBtn">Resetar lista</span>
+        </section>
+
+        <section class="itens-tabela">
+            <table id="myTable">
+                <tr>
+                    <th style="width:20%">Referência</th>
+                    <th style="width:30%">Nome</th>
+                    <th>Valor</th>
+                    <th>Data</th>
+                    <th style="width:5%"><img src="https://cdn-icons-png.flaticon.com/512/126/126468.png" width="15px" height="15px"></th>
+                    <th style="width:5%"><img src="https://cdn-icons-png.flaticon.com/512/12/12912.png" width="15px" height="15px"></th>
+                </tr>
+            </table>
+        </section>
+    </main>
+    <footer>
+        <p>Projeto MVP1 - <a href="https://www.puc-rio.br/index.html">PUC-RIO</a> (Engenharia de Software)</p>
+        <p>2023 All Rights Reserved. Design by <a href="https://www.linkedin.com/in/raquel-wainfas-35860070/">Raquel Wainfas</p>
+    </footer>
+    
+    <script src="scripts.js"></script>
+</body>
+</html>
