@@ -16,7 +16,7 @@ Após clonar o repositório, é necessário ir ao diretório raiz, pelo terminal
 
 Este comando instala as dependências/bibliotecas, descritas no arquivo `requirements.txt`.
 
-Para executar a API  basta executar:
+**Para executar a API basta executar:**
 
 ```
 (env)$ flask run --host 0.0.0.0 --port 5000
@@ -30,3 +30,5 @@ automaticamente após uma mudança no código fonte.
 ```
 
 Abra o [http://localhost:5000/#/](http://localhost:5000/#/) no navegador para verificar o status da API em execução.
+
+**Para executar com o front-end basta abrir o arquivo 'index.html' que se encontra na pasta 'geld_front'**
